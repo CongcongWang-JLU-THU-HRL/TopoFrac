@@ -1,0 +1,165 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="C:\Users\wcc19\Desktop\TopoFrac\TopoFrac_1.prj" location="C:\Users\wcc19\Desktop\TopoFrac" name="TopoFrac_1" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>TopoFrac</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Congcong Wang</param.authnamewatermark>
+    <param.email>wangcongcong060712@163.com</param.email>
+    <param.company />
+    <param.summary>A specialized tool designed for graphic characterization and topological analysis of 2D fracture networks.</param.summary>
+    <param.description>This toolkit provides a standard workflow for identifying, establishing and analyzing the topological structure of two-dimensional fracture networks from trace images. With its intuitive interface and straightforward operation, it can be applied to fracture networks across various scales, rock types, and tectonic settings. Compared with existing topological analysis tools that focus on counting node and branch in 2D fracture network, TopoFrac integrates complex network theory to quantify and disclose deeper structural characteristics, including network diameter, global connectivity, local connection patterns, modularity, small-world properties, etc. It also features a permeability prediction module based on Saevik's node proportion method.</param.description>
+    <param.screenshot>${PROJECT_ROOT}\icon\splash.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\TopoFrac\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\TopoFrac_1\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\TopoFrac_1\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\TopoFrac_1\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\TopoFrac_1</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>true</param.create.log>
+    <param.log.file>app.log</param.log.file>
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.company />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\TopoFrac.mlapp</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\adjacency2graph.m</file>
+      <file>${PROJECT_ROOT}\Adjacency_info_to_networkx.m</file>
+      <file>${PROJECT_ROOT}\bwIsPolyLine.m</file>
+      <file>${PROJECT_ROOT}\construct_adjacency.m</file>
+      <file>${PROJECT_ROOT}\douglasPeucker.m</file>
+      <file>${PROJECT_ROOT}\fixgraph.m</file>
+      <file>${PROJECT_ROOT}\graph_efficiency.m</file>
+      <file>${PROJECT_ROOT}\icon\b0.png</file>
+      <file>${PROJECT_ROOT}\icon\icon.png</file>
+      <file>${PROJECT_ROOT}\icon\icon2.png</file>
+      <file>${PROJECT_ROOT}\icon\Keff-f.png</file>
+      <file>${PROJECT_ROOT}\icon\the hydraulic connectivity.png</file>
+      <file>${PROJECT_ROOT}\node_clustering_coefficient.m</file>
+      <file>${PROJECT_ROOT}\NODEI.m</file>
+      <file>${PROJECT_ROOT}\NODEV.m</file>
+      <file>${PROJECT_ROOT}\NODEXY_toplimit.m</file>
+      <file>${PROJECT_ROOT}\Obeymajority.m</file>
+      <file>${PROJECT_ROOT}\pearson_assortative.m</file>
+      <file>${PROJECT_ROOT}\pointToLineDist.m</file>
+      <file>${PROJECT_ROOT}\STernary.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\TopoFrac_1\for_testing" name="TopoFrac.exe" optional="false">C:\Users\wcc19\Desktop\TopoFrac\TopoFrac_1\for_testing\TopoFrac.exe</file>
+      <file location="${PROJECT_ROOT}\TopoFrac_1\for_testing" name="readme.txt" optional="true">C:\Users\wcc19\Desktop\TopoFrac\TopoFrac_1\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\TopoFrac_1\for_testing" name="splash.png" optional="false">C:\Users\wcc19\Desktop\TopoFrac\TopoFrac_1\for_testing\splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\Program Files\MATLAB\R2024a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
