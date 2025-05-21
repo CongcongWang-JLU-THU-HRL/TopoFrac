@@ -17,7 +17,7 @@ Both methods invoke TopoFrac's graphical user interface, which features six modu
   - Visualization
   - Output
 
-(2) Click the 'Select' button in the input module and upload the trace image to be analysed. Once the image is loaded, it appears in the Visualization module. 
+(2) Click the 'Select' button in the input module and upload the trace image to be analysed. Once the image is loaded, it appears in the Visualization module. For testing purposes choose *test_image.png* from the example folder.
 
 (3) Click the 'Construct Graph G' button in the Characterization module. Following successful execution of the characterization algorithm, 
 the Characterization module automatically updates the quantitative network parameters, including the number of nodes (N), edges (M), connected components (Ncc), 
