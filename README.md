@@ -1,15 +1,12 @@
-What is this repository for?
-
+# **What is this repository for?**
 TopoFrac is a software for identifying, extracting, and establishing the topological structure of natural fracture networks from trace images,
 evaluating their topological complexity and predict equivalent permeability from the perspective of graph theory and complex networks.
 
-How do I get set up?
-
+# **How do I get set up?**
 TopoFrac is developed in MATLAB and features a graphical user interface built using MATLAB App Designer. 
 Copy the repository folder (Downloads from the menu on the above of this page). 
 
-Usage
-
+# **Usage**
 (1) Users can use TopoFrac through two methods: either by double-clicking the standalone executable file within the installation directory, 
 or by incorporating the TopoFrac directory into the MATLAB workspace path and running 'TopoFrac' in the MATLAB command window as a MATLAB function. 
 Both methods invoke TopoFrac's graphical user interface, which features six modules:
@@ -46,8 +43,6 @@ then set up the fracture length-aperture relationship and scale of the image, an
 
 (6) Upon completion of the calculation, the main variables could be exported to a MAT file and an excel file by clicking the 'save' button in the Output module. 
 
-
-
-Who do I talk to?
+# **Who do I talk to?**
 Congcong Wang, Beijing Huairou Laboratory
 wangcongcong060712@163.com
